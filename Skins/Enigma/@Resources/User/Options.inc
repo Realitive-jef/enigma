@@ -6,59 +6,6 @@
 Stylesheet=Enigma Dark
 
 ;-----------------------
-; WORLD
-
-; Local Weather
-WeatherCodeName=New York, Stone Street Historic District, New York, United States of America
-WeatherCodeLat=40.712728
-WeatherCodeLon=-74.006015
-; Units of measure. This must be one of the following lower case letters:
-; e		This is "Imperial", using Fahrenheit.
-; m		This is "Metric", using Celsius.
-; h		This is "Hybrid", used primarily in the UK. Celsius for temperatures, but miles for distances.
-WeatherCodeUnit=e
-WeatherCodeLanguage=en-US
-
-; 1st World Weather
-World1WeatherCodeName=London, Greater London, England, United Kingdom
-World1WeatherCodeLat=51.507321
-World1WeatherCodeLon=-0.127647
-; Units of measure. This must be one of the following lower case letters:
-; e		This is "Imperial", using Fahrenheit.
-; m		This is "Metric", using Celsius.
-; h		This is "Hybrid", used primarily in the UK. Celsius for temperatures, but miles for distances.
-World1WeatherCodeUnit=h
-World1WeatherCodeLanguage=en-GB
-
-; 2nd World Weather
-World2WeatherCodeName=Paris, Île-de-France, France métropolitaine, France
-World2WeatherCodeLat=48.856696
-World2WeatherCodeLon=2.351461
-; Units of measure. This must be one of the following lower case letters:
-; e		This is "Imperial", using Fahrenheit.
-; m		This is "Metric", using Celsius.
-; h		This is "Hybrid", used primarily in the UK. Celsius for temperatures, but miles for distances.
-World2WeatherCodeUnit=m
-World2WeatherCodeLanguage=fr-FR
-
-; 3rd World Weather
-World3WeatherCodeName=Melbourne, City of Melbourne, Victoria, 3000, Australia
-World3WeatherCodeLat=-37.814217
-World3WeatherCodeLon=144.963160
-; Units of measure. This must be one of the following lower case letters:
-; e		This is "Imperial", using Fahrenheit.
-; m		This is "Metric", using Celsius.
-; h		This is "Hybrid", used primarily in the UK. Celsius for temperatures, but miles for distances.
-World3WeatherCodeUnit=e
-World3WeatherCodeLanguage=en-CA
-
-; Skin labels
-WindChill=Wind Chill
-Speed=Speed
-Direction=Direction
-Visibility=Visibility
-
-;-----------------------
 ; GENERAL
 
 Note1Path=#@#User\Notes\Notes.txt
@@ -66,19 +13,21 @@ Note2Path=#@#User\Notes\Tasks.txt
 Note3Path=#@#User\Notes\About.txt
 NoteHeight=200
 Drive1=C
-Drive2=E
-Drive3=F
+Drive2=D
+Drive3=E
+Drive4=F
+Drive5=G
 NetworkMaxDownload=1000000
 NetworkMaxUpload=500000
 SystemGraphType=Floating
-CalendarEventFile=%USERPROFILE%\Rainmeter\Skins\Enigma\@Resources\User\Calendars\Holidays.xml
+CalendarEventFile=#@#User\Calendars\Holidays.xml
 CalendarShowEvents=1
 CalendarExtraDays=1
 CalendarLeadingZeroes=0
 CalendarMondays=0
 GalleryPath=%USERPROFILE%\Pictures
 GallerySubfolders=1
-GalleryPosition=Fill
+GalleryPosition=Center
 GalleryRatio=3/4
 VolumeIncrement=5
 TriptychInterval=30
@@ -88,24 +37,21 @@ ProcessInterval=5
 ;-----------------------
 ; MUSIC
 
-MusicPlayerType=12
-MusicPlayer=Winamp
+MusicPlayerType=3
+MusicPlayer=Spotify
 
 ;-----------------------
 ; FEEDS
 
 Feed1=http://news.google.com/news?pz=1&ned=us&hl=en&topic=h&num=10&output=rss
-Feed2=http://kaelri.com/feed/
-Feed3=http://feeds.bbci.co.uk/news/video_and_audio/news_front_page/rss.xml?edition=uk
-GmailUsername=YourUsername
+Feed2=http://rainmeter.net/forum/feed.php
+Feed3=http://kaelri.com/feed/
+GmailUsername=YourUsernameHere
 GmailPassword=YourPasswordHere
-GmailDomain=domain.com
-GmailUrl=https://#GmailUsername#:#GmailPassword#@gmail.google.com/gmail/feed/atom
 FacebookFeed=YourFacebookFeedHere
-; GoogleCalendar1=https://calendar.google.com/calendar/ical/.../full.ics
-GoogleCalendar1=https://calendar.google.com/calendar/ical/en.usa%23holiday%40group.v.calendar.google.com/public/full.ics
-GoogleCalendar2=https://calendar.google.com/calendar/ical/ht3jlfaac5lfd6263ulfh4tql8%40group.calendar.google.com/public/full.ics
-GoogleCalendar3=
+GoogleCalendar1=YourCalendarAddressHere
+GoogleCalendar2=YourCalendarAddressHere
+GoogleCalendar3=YourCalendarAddressHere
 GoogleCalendarWriteEvents=1
 RTMusername=YourUserNameHere
 RTMpassword=YourPasswordHere
@@ -116,6 +62,27 @@ TwitterUsername=YourUsernameHere
 TwitterPassword=YourPasswordHere
 
 ;-----------------------
+; WORLD
+
+WeatherCode=JAXX0085
+WeatherCodeName=Tokyo
+WeatherCodeLat=35.68
+WeatherCodeLon=139.69
+Unit=c
+World1WeatherCode=44418
+World1WeatherCodeName=Tokyo
+World1WeatherCodeLat=51.51
+World1WeatherCodeLon=-0.13
+World2WeatherCode=2514815
+World2WeatherCodeName=Washington
+World2WeatherCodeLat=38.9
+World2WeatherCodeLon=-77.03
+World3WeatherCode=455825
+World3WeatherCodeName=Rio de Janeiro
+World3WeatherCodeLat=-22.98
+World3WeatherCodeLon=-43.2
+
+;-----------------------
 ; APPS
 
 App1=Chrome
@@ -124,25 +91,25 @@ App1PathHandle=chrome.exe
 App1Label=WEB
 App1Icon=#@#Images\Launcher\Chrome.#ColorImage#.png
 App2=Notepad
-App2Path=notepad.exe
-App2PathHandle=notepad.exe
-App2Label=TEXT
+App2Path=notepads.exe
+App2PathHandle=notepads.exe
+App2Label=EDITER
 App2Icon=#@#Images\Launcher\Text.#ColorImage#.png
 App3=Explorer
 App3Path=explorer.exe
 App3PathHandle=explorer.exe
 App3Label=FILES
 App3Icon=#@#Images\Launcher\Start.#ColorImage#.png
-App4=Skype
-App4Path=C:\Program Files\Skype\Phone\skype.exe
-App4PathHandle=skype.exe
-App4Label=CHAT
-App4Icon=#@#Images\Launcher\Skype.#ColorImage#.png
-App5=Rainmeter.net
-App5Path=http://rainmeter.net/
-App5Handle=rainmeter.exe
-App5Label=FORUM
-App5Icon=#@#Images\Launcher\Rainmeter.png
+App4=Discord
+App4Path=Discord.exe
+App4PathHandle=Discord.exe
+App4Label=VOICECHAT
+App4Icon=#@#Images\Launcher\Discord.#ColorImage#.png
+App5=Github.com
+App5Path=https://github.com/
+App5Handle=https://github.com/
+App5Label=GITHUB
+App5Icon=#@#Images\Launcher\Github.#ColorImage#.png
 
 ;-----------------------
 ; SEARCH
@@ -162,4 +129,3 @@ Search4Icon=#@#Images\Search\Twitter.#ColorImage#.png
 Search5=Rainmeter.net
 Search5Command="https://www.google.com/search?q=site%3Ahttp%3A%2F%2Frainmeter.net%2Fcms%2F%20$UserInput$"
 Search5Icon=#@#Images\Search\Run.#ColorImage#.png
-TaskbarHideTriptych=0
